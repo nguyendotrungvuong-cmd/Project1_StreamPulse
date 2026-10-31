@@ -82,7 +82,7 @@ SELECT
 
     JSON_VALUE(r.payload, '$.run_id') AS run_id
 
-FROM `youtube-pipeline-512201.raw_youtube.channels` AS r
+FROM `youtube-pipeline-512201.raw_youtube.raw_channels` AS r
 
 CROSS JOIN UNNEST(
     JSON_QUERY_ARRAY(r.payload, '$.data.items')

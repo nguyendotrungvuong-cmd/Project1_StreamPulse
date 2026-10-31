@@ -258,3 +258,311 @@
 2026-10-30 21:28:05,303 | INFO | [5/5] SILVER SUCCESS
 2026-10-30 21:28:05,303 | INFO | PIPELINE SUCCESS | run_id=20261030_142308_6a6c0a72
 2026-10-30 21:28:05,304 | INFO | PIPELINE FINISHED | run_id=20261030_142308_6a6c0a72 | duration=296.77 seconds
+2026-10-31 14:30:54,068 | INFO | ========== PIPELINE START ==========
+2026-10-31 14:30:54,069 | INFO | RUN ID: 20261031_073054_33de18dd
+2026-10-31 14:30:54,069 | INFO | [1/5] CHANNEL EXTRACTION START
+2026-10-31 14:31:09,206 | INFO | [1/5] CHANNEL EXTRACTION SUCCESS
+2026-10-31 14:31:09,208 | INFO | [2/5] UPLOADS EXTRACTION START
+2026-10-31 14:31:12,758 | INFO | Playlist ID: ['UUkna2OcuN1E6u5I8GVtdkOw']
+2026-10-31 14:34:13,603 | INFO | [2/5] UPLOADS EXTRACTION SUCCESS
+2026-10-31 14:34:13,603 | INFO | [3/5] VIDEO EXTRACTION START
+2026-10-31 14:34:17,731 | INFO | Total videos: 236
+2026-10-31 14:34:17,731 | INFO | Extracting video 1/236 | video_id=A-dKtpVbh5Q
+2026-10-31 14:34:18,061 | INFO | Extracting video 2/236 | video_id=AtIHwHuj8SQ
+2026-10-31 14:34:18,513 | INFO | Extracting video 3/236 | video_id=muEpzOXohnI
+2026-10-31 14:34:18,829 | INFO | Extracting video 4/236 | video_id=j6Y9chEDBYE
+2026-10-31 14:34:19,134 | INFO | Extracting video 5/236 | video_id=u4ticMBG65Q
+2026-10-31 14:34:19,424 | INFO | Extracting video 6/236 | video_id=bLXHLp1gJ2g
+2026-10-31 14:34:19,716 | INFO | Extracting video 7/236 | video_id=QZY2gsQ7b2w
+2026-10-31 14:34:20,017 | INFO | Extracting video 8/236 | video_id=82vRHyZrq-U
+2026-10-31 14:34:20,345 | INFO | Extracting video 9/236 | video_id=WrmX3M81U1U
+2026-10-31 14:34:20,614 | INFO | Extracting video 10/236 | video_id=sGXXt5wUzPc
+2026-10-31 14:34:20,883 | INFO | Extracting video 11/236 | video_id=2_xDDR-IcOs
+2026-10-31 14:34:21,189 | INFO | Extracting video 12/236 | video_id=yquUG7unSdk
+2026-10-31 14:34:21,520 | INFO | Extracting video 13/236 | video_id=z2SeUjS3Byg
+2026-10-31 14:34:21,850 | INFO | Extracting video 14/236 | video_id=gYDnW-WodpQ
+2026-10-31 14:34:22,152 | INFO | Extracting video 15/236 | video_id=A4px0PJj1LI
+2026-10-31 14:34:22,403 | INFO | Extracting video 16/236 | video_id=_4LJq5v-CSw
+2026-10-31 14:34:22,674 | INFO | Extracting video 17/236 | video_id=tmj7sSYwmgs
+2026-10-31 14:34:22,977 | INFO | Extracting video 18/236 | video_id=iYyLgyuuXqM
+2026-10-31 14:34:23,257 | INFO | Extracting video 19/236 | video_id=cGeTXmVJMqA
+2026-10-31 14:34:23,529 | INFO | Extracting video 20/236 | video_id=G6-LC3hXTNw
+2026-10-31 14:34:23,790 | INFO | Extracting video 21/236 | video_id=i_Kn2Aacp_k
+2026-10-31 14:34:24,075 | INFO | Extracting video 22/236 | video_id=PqbYNrta90k
+2026-10-31 14:34:24,327 | INFO | Extracting video 23/236 | video_id=gAFyaSR0JFE
+2026-10-31 14:34:24,598 | INFO | Extracting video 24/236 | video_id=rDjJ0c8uQjQ
+2026-10-31 14:34:24,880 | INFO | Extracting video 25/236 | video_id=JIOpUBv2v4I
+2026-10-31 14:34:25,145 | INFO | Extracting video 26/236 | video_id=HpDW4BMm6jo
+2026-10-31 14:34:25,415 | INFO | Extracting video 27/236 | video_id=aBcZ4-BOFCw
+2026-10-31 14:34:25,756 | INFO | Extracting video 28/236 | video_id=jEckK1yx8Us
+2026-10-31 14:34:26,049 | INFO | Extracting video 29/236 | video_id=FLOBK2KGMyQ
+2026-10-31 14:34:26,318 | INFO | Extracting video 30/236 | video_id=NAGJ8fT-Mh4
+2026-10-31 14:34:26,649 | INFO | Extracting video 31/236 | video_id=FdnQKncOoU8
+2026-10-31 14:34:26,914 | INFO | Extracting video 32/236 | video_id=MF7GSh59Rpk
+2026-10-31 14:34:27,190 | INFO | Extracting video 33/236 | video_id=OIozUWuFi1w
+2026-10-31 14:34:27,493 | INFO | Extracting video 34/236 | video_id=09MvWNXryY8
+2026-10-31 14:34:27,781 | INFO | Extracting video 35/236 | video_id=KFW36ADumJw
+2026-10-31 14:34:28,055 | INFO | Extracting video 36/236 | video_id=QgJMPZ5-0wc
+2026-10-31 14:34:28,338 | INFO | Extracting video 37/236 | video_id=609h41mJyrE
+2026-10-31 14:34:28,613 | INFO | Extracting video 38/236 | video_id=TQbaSHCgByA
+2026-10-31 14:34:28,877 | INFO | Extracting video 39/236 | video_id=sLs3sKoSx_w
+2026-10-31 14:34:29,158 | INFO | Extracting video 40/236 | video_id=kaGJudsusZQ
+2026-10-31 14:34:29,429 | INFO | Extracting video 41/236 | video_id=Ro3MJQjGfoY
+2026-10-31 14:34:29,711 | INFO | Extracting video 42/236 | video_id=cPXmnSSiQ4Q
+2026-10-31 14:34:30,002 | INFO | Extracting video 43/236 | video_id=EyJ3xyliVLg
+2026-10-31 14:34:30,280 | INFO | Extracting video 44/236 | video_id=xEVb-Xc32go
+2026-10-31 14:34:30,547 | INFO | Extracting video 45/236 | video_id=_IYBZyOuyXA
+2026-10-31 14:34:30,831 | INFO | Extracting video 46/236 | video_id=WDqNRp7H-D8
+2026-10-31 14:34:31,083 | INFO | Extracting video 47/236 | video_id=JASHI1OqaME
+2026-10-31 14:34:31,367 | INFO | Extracting video 48/236 | video_id=DSlE_1aO24g
+2026-10-31 14:34:31,674 | INFO | Extracting video 49/236 | video_id=INDZNbRf810
+2026-10-31 14:34:31,951 | INFO | Extracting video 50/236 | video_id=VZpOEH0JSG8
+2026-10-31 14:34:32,233 | INFO | Extracting video 51/236 | video_id=uaxMpgSJb0U
+2026-10-31 14:34:32,516 | INFO | Extracting video 52/236 | video_id=5FyjhpN2Wuk
+2026-10-31 14:34:32,948 | INFO | Extracting video 53/236 | video_id=JuP_Ap4HWYM
+2026-10-31 14:34:33,263 | INFO | Extracting video 54/236 | video_id=LTKKJtQU9wk
+2026-10-31 14:34:33,562 | INFO | Extracting video 55/236 | video_id=gqPalCMH5Yk
+2026-10-31 14:34:33,881 | INFO | Extracting video 56/236 | video_id=HRJSMyQO7I0
+2026-10-31 14:34:34,149 | INFO | Extracting video 57/236 | video_id=FQNbIUrgDxQ
+2026-10-31 14:34:34,454 | INFO | Extracting video 58/236 | video_id=v5Ir-8SepFA
+2026-10-31 14:34:34,852 | INFO | Extracting video 59/236 | video_id=_V1ELW4KyK0
+2026-10-31 14:34:35,131 | INFO | Extracting video 60/236 | video_id=Q699pWl4Isw
+2026-10-31 14:34:35,459 | INFO | Extracting video 61/236 | video_id=vCIwRQLXRL4
+2026-10-31 14:34:35,780 | INFO | Extracting video 62/236 | video_id=y0Ry2aNiUso
+2026-10-31 14:34:36,072 | INFO | Extracting video 63/236 | video_id=rg5-Sl3V81k
+2026-10-31 14:34:36,346 | INFO | Extracting video 64/236 | video_id=y1JaD6I8XPg
+2026-10-31 14:34:36,689 | INFO | Extracting video 65/236 | video_id=oJsuujJAhsw
+2026-10-31 14:34:36,966 | INFO | Extracting video 66/236 | video_id=lFPYexNPxZI
+2026-10-31 14:34:37,228 | INFO | Extracting video 67/236 | video_id=1lexF-gJcDU
+2026-10-31 14:34:37,488 | INFO | Extracting video 68/236 | video_id=e8I81-eQn6E
+2026-10-31 14:34:37,825 | INFO | Extracting video 69/236 | video_id=Uk-NnTJHmNQ
+2026-10-31 14:34:38,115 | INFO | Extracting video 70/236 | video_id=oqe0qpDIYz8
+2026-10-31 14:34:38,531 | INFO | Extracting video 71/236 | video_id=LJYbZQngF5Q
+2026-10-31 14:34:38,797 | INFO | Extracting video 72/236 | video_id=UW-5tKcTf7k
+2026-10-31 14:34:39,067 | INFO | Extracting video 73/236 | video_id=pHrbgN0xrOA
+2026-10-31 14:34:39,371 | INFO | Extracting video 74/236 | video_id=XHR2GPuJdto
+2026-10-31 14:34:39,682 | INFO | Extracting video 75/236 | video_id=k2QC2_m1Tyo
+2026-10-31 14:34:39,984 | INFO | Extracting video 76/236 | video_id=x7bw-SK5Kc8
+2026-10-31 14:34:40,316 | INFO | Extracting video 77/236 | video_id=flAkyNAQdoU
+2026-10-31 14:34:40,635 | INFO | Extracting video 78/236 | video_id=aE3J9C0MgC4
+2026-10-31 14:34:40,945 | INFO | Extracting video 79/236 | video_id=-WFhn1655BE
+2026-10-31 14:34:41,253 | INFO | Extracting video 80/236 | video_id=n37BLRPZskI
+2026-10-31 14:34:41,547 | INFO | Extracting video 81/236 | video_id=Vm6fkfnSzjc
+2026-10-31 14:34:41,813 | INFO | Extracting video 82/236 | video_id=PTJEeW65hr8
+2026-10-31 14:34:42,136 | INFO | Extracting video 83/236 | video_id=B7tnqc-n7xs
+2026-10-31 14:34:42,401 | INFO | Extracting video 84/236 | video_id=Cr5HV-cY9Z0
+2026-10-31 14:34:42,721 | INFO | Extracting video 85/236 | video_id=9oe2Hk0vTxE
+2026-10-31 14:34:43,014 | INFO | Extracting video 86/236 | video_id=GndJqxerTxQ
+2026-10-31 14:34:43,342 | INFO | Extracting video 87/236 | video_id=-K3-NOrBhxY
+2026-10-31 14:34:43,642 | INFO | Extracting video 88/236 | video_id=N4SlgUOWYTs
+2026-10-31 14:34:44,009 | INFO | Extracting video 89/236 | video_id=3Ua6OLKAwcI
+2026-10-31 14:34:44,456 | INFO | Extracting video 90/236 | video_id=Uj1edvR61gk
+2026-10-31 14:34:44,762 | INFO | Extracting video 91/236 | video_id=XssNYyRc7Jc
+2026-10-31 14:34:45,051 | INFO | Extracting video 92/236 | video_id=_5REnoqAP4Y
+2026-10-31 14:34:45,354 | INFO | Extracting video 93/236 | video_id=8myQKrsnlkk
+2026-10-31 14:34:45,639 | INFO | Extracting video 94/236 | video_id=kSqmXbJT-mE
+2026-10-31 14:34:45,958 | INFO | Extracting video 95/236 | video_id=A-iMQ-KmrLQ
+2026-10-31 14:34:46,232 | INFO | Extracting video 96/236 | video_id=YpoGzZM1SbQ
+2026-10-31 14:34:46,531 | INFO | Extracting video 97/236 | video_id=FO5-SleSv3c
+2026-10-31 14:34:46,798 | INFO | Extracting video 98/236 | video_id=PyEyU7gVrgo
+2026-10-31 14:34:47,075 | INFO | Extracting video 99/236 | video_id=KEVhp9_8TnE
+2026-10-31 14:34:47,350 | INFO | Extracting video 100/236 | video_id=ei_TBsGVuO4
+2026-10-31 14:34:48,677 | INFO | Extracting video 101/236 | video_id=YWcxOraYr3g
+2026-10-31 14:34:48,948 | INFO | Extracting video 102/236 | video_id=hzEYoe6rpnI
+2026-10-31 14:34:49,252 | INFO | Extracting video 103/236 | video_id=zLveCBvS-BI
+2026-10-31 14:34:49,550 | INFO | Extracting video 104/236 | video_id=9WNnLcqHz1U
+2026-10-31 14:34:49,856 | INFO | Extracting video 105/236 | video_id=V2AQTMD6Iis
+2026-10-31 14:34:50,145 | INFO | Extracting video 106/236 | video_id=EyEQn7gB7Kc
+2026-10-31 14:34:50,427 | INFO | Extracting video 107/236 | video_id=YxS1VpE_-Fo
+2026-10-31 14:34:50,741 | INFO | Extracting video 108/236 | video_id=fCa6Rlq96PY
+2026-10-31 14:34:51,037 | INFO | Extracting video 109/236 | video_id=cIwigT9aFeU
+2026-10-31 14:34:51,329 | INFO | Extracting video 110/236 | video_id=kLNzTzjbR6c
+2026-10-31 14:34:51,653 | INFO | Extracting video 111/236 | video_id=M5nlbaf_eIw
+2026-10-31 14:34:52,096 | INFO | Extracting video 112/236 | video_id=gRPtS2GaGxA
+2026-10-31 14:34:52,533 | INFO | Extracting video 113/236 | video_id=wv21jgCns1g
+2026-10-31 14:34:52,831 | INFO | Extracting video 114/236 | video_id=P8tU1vCb8UI
+2026-10-31 14:34:53,086 | INFO | Extracting video 115/236 | video_id=mJyCoAPvcVw
+2026-10-31 14:34:53,357 | INFO | Extracting video 116/236 | video_id=YR82TIJFbwM
+2026-10-31 14:34:53,623 | INFO | Extracting video 117/236 | video_id=4dbWId0lIcQ
+2026-10-31 14:34:53,885 | INFO | Extracting video 118/236 | video_id=6eIgK9AyJhw
+2026-10-31 14:34:54,191 | INFO | Extracting video 119/236 | video_id=kofOa9P1eTg
+2026-10-31 14:34:54,507 | INFO | Extracting video 120/236 | video_id=Y7UNRiyklyg
+2026-10-31 14:34:54,784 | INFO | Extracting video 121/236 | video_id=p-WMQSKpvSI
+2026-10-31 14:34:55,047 | INFO | Extracting video 122/236 | video_id=IaFz0USLF8o
+2026-10-31 14:34:55,372 | INFO | Extracting video 123/236 | video_id=4QbfpHYLYR8
+2026-10-31 14:34:55,727 | INFO | Extracting video 124/236 | video_id=EWHqXdaYdr4
+2026-10-31 14:34:56,083 | INFO | Extracting video 125/236 | video_id=hFcCK8cbg2U
+2026-10-31 14:34:56,356 | INFO | Extracting video 126/236 | video_id=cAcVz0Vu-wI
+2026-10-31 14:34:56,628 | INFO | Extracting video 127/236 | video_id=dkGEypJedTg
+2026-10-31 14:34:56,900 | INFO | Extracting video 128/236 | video_id=3b17UbVPl1o
+2026-10-31 14:34:57,161 | INFO | Extracting video 129/236 | video_id=NVV8jtUgxgA
+2026-10-31 14:34:57,467 | INFO | Extracting video 130/236 | video_id=QIVqDtEr7Ew
+2026-10-31 14:34:57,838 | INFO | Extracting video 131/236 | video_id=j-m6peqJW4A
+2026-10-31 14:34:58,143 | INFO | Extracting video 132/236 | video_id=TEahqoSAdbI
+2026-10-31 14:34:58,411 | INFO | Extracting video 133/236 | video_id=eb3Z4idaFws
+2026-10-31 14:34:58,755 | INFO | Extracting video 134/236 | video_id=eUEJe8EFe64
+2026-10-31 14:34:59,068 | INFO | Extracting video 135/236 | video_id=611Tygyno64
+2026-10-31 14:34:59,360 | INFO | Extracting video 136/236 | video_id=khQ2Gvt7cGE
+2026-10-31 14:34:59,688 | INFO | Extracting video 137/236 | video_id=ZF8Xgxa0Uks
+2026-10-31 14:34:59,985 | INFO | Extracting video 138/236 | video_id=YjuWIMor2hw
+2026-10-31 14:35:00,305 | INFO | Extracting video 139/236 | video_id=TN8DX9e9__Q
+2026-10-31 14:35:00,594 | INFO | Extracting video 140/236 | video_id=LyNQXd1C90g
+2026-10-31 14:35:00,841 | INFO | Extracting video 141/236 | video_id=0gwyuEVu4xg
+2026-10-31 14:35:01,111 | INFO | Extracting video 142/236 | video_id=Fpq4uoHkTOA
+2026-10-31 14:35:01,385 | INFO | Extracting video 143/236 | video_id=2x4uMTSLOYs
+2026-10-31 14:35:01,675 | INFO | Extracting video 144/236 | video_id=OSRqZGSrAec
+2026-10-31 14:35:01,964 | INFO | Extracting video 145/236 | video_id=XxU2JjJyj2M
+2026-10-31 14:35:02,229 | INFO | Extracting video 146/236 | video_id=FyNKzOfeSY0
+2026-10-31 14:35:02,500 | INFO | Extracting video 147/236 | video_id=5ReCiKOcbdI
+2026-10-31 14:35:02,775 | INFO | Extracting video 148/236 | video_id=9p-AFQhDb3c
+2026-10-31 14:35:03,047 | INFO | Extracting video 149/236 | video_id=jpYD8VJiq-w
+2026-10-31 14:35:03,321 | INFO | Extracting video 150/236 | video_id=_llOcizum-A
+2026-10-31 14:35:03,595 | INFO | Extracting video 151/236 | video_id=xpUiLwpvTDY
+2026-10-31 14:35:03,901 | INFO | Extracting video 152/236 | video_id=QkixOpj6l5U
+2026-10-31 14:35:04,181 | INFO | Extracting video 153/236 | video_id=FaYhQaXV_MU
+2026-10-31 14:35:04,437 | INFO | Extracting video 154/236 | video_id=zBnvqMMhPHk
+2026-10-31 14:35:04,711 | INFO | Extracting video 155/236 | video_id=qHjYfVsAO6c
+2026-10-31 14:35:05,002 | INFO | Extracting video 156/236 | video_id=PhTEGOW6tZ4
+2026-10-31 14:35:05,291 | INFO | Extracting video 157/236 | video_id=7nZ25qD3w5o
+2026-10-31 14:35:05,596 | INFO | Extracting video 158/236 | video_id=Pc7c_ysIJ2M
+2026-10-31 14:35:05,874 | INFO | Extracting video 159/236 | video_id=E6DH8YTI4y4
+2026-10-31 14:35:06,155 | INFO | Extracting video 160/236 | video_id=gtGvWV3iIVo
+2026-10-31 14:35:06,434 | INFO | Extracting video 161/236 | video_id=s94afhDSaFE
+2026-10-31 14:35:06,737 | INFO | Extracting video 162/236 | video_id=a_6hZ48Sx_k
+2026-10-31 14:35:07,012 | INFO | Extracting video 163/236 | video_id=_Fw0cxlOnKg
+2026-10-31 14:35:07,264 | INFO | Extracting video 164/236 | video_id=tlR8FLacEDM
+2026-10-31 14:35:07,509 | INFO | Extracting video 165/236 | video_id=ipkB88cntxs
+2026-10-31 14:35:07,765 | INFO | Extracting video 166/236 | video_id=IADvKb3wka0
+2026-10-31 14:35:08,046 | INFO | Extracting video 167/236 | video_id=YhQn3fFYaf8
+2026-10-31 14:35:08,329 | INFO | Extracting video 168/236 | video_id=SQXuo_R6uXc
+2026-10-31 14:35:08,579 | INFO | Extracting video 169/236 | video_id=7cGUFO-J1Kk
+2026-10-31 14:35:08,844 | INFO | Extracting video 170/236 | video_id=g1HWzNRJi24
+2026-10-31 14:35:09,101 | INFO | Extracting video 171/236 | video_id=916aGwp-FiM
+2026-10-31 14:35:09,407 | INFO | Extracting video 172/236 | video_id=fVzQNCSOQOg
+2026-10-31 14:35:09,765 | INFO | Extracting video 173/236 | video_id=i8OLldlCLt4
+2026-10-31 14:35:10,019 | INFO | Extracting video 174/236 | video_id=y8TmdViwAgU
+2026-10-31 14:35:10,308 | INFO | Extracting video 175/236 | video_id=MSXukWcZZMk
+2026-10-31 14:35:10,592 | INFO | Extracting video 176/236 | video_id=Xg1k95YOwIo
+2026-10-31 14:35:10,840 | INFO | Extracting video 177/236 | video_id=JFrvC9wHT-E
+2026-10-31 14:35:11,146 | INFO | Extracting video 178/236 | video_id=_NED_yrb7m8
+2026-10-31 14:35:11,432 | INFO | Extracting video 179/236 | video_id=hNzMqmpaGoU
+2026-10-31 14:35:11,696 | INFO | Extracting video 180/236 | video_id=RUiyv0jH7GM
+2026-10-31 14:35:11,997 | INFO | Extracting video 181/236 | video_id=OpGPblES9uk
+2026-10-31 14:35:12,272 | INFO | Extracting video 182/236 | video_id=uKGYgxEDubo
+2026-10-31 14:35:12,531 | INFO | Extracting video 183/236 | video_id=f_foSwOcLnY
+2026-10-31 14:35:12,802 | INFO | Extracting video 184/236 | video_id=swazbfWh48Q
+2026-10-31 14:35:13,058 | INFO | Extracting video 185/236 | video_id=ZbPR8z2K6q0
+2026-10-31 14:35:13,335 | INFO | Extracting video 186/236 | video_id=V_T7crjdOmY
+2026-10-31 14:35:13,630 | INFO | Extracting video 187/236 | video_id=gudLfTXsE94
+2026-10-31 14:35:13,901 | INFO | Extracting video 188/236 | video_id=VbtlomKfLw8
+2026-10-31 14:35:14,269 | INFO | Extracting video 189/236 | video_id=FDtV8mL9ue0
+2026-10-31 14:35:14,602 | INFO | Extracting video 190/236 | video_id=wImSeM8wL98
+2026-10-31 14:35:14,880 | INFO | Extracting video 191/236 | video_id=MvftklIMwWQ
+2026-10-31 14:35:15,151 | INFO | Extracting video 192/236 | video_id=5bThAf8Kpi8
+2026-10-31 14:35:15,461 | INFO | Extracting video 193/236 | video_id=kRv7JuwjZVI
+2026-10-31 14:35:15,735 | INFO | Extracting video 194/236 | video_id=Pgc0_HlgUM4
+2026-10-31 14:35:16,044 | INFO | Extracting video 195/236 | video_id=EJY4COOfxwE
+2026-10-31 14:35:16,307 | INFO | Extracting video 196/236 | video_id=ivEBqxr_wV8
+2026-10-31 14:35:16,568 | INFO | Extracting video 197/236 | video_id=GpyACMH2Yp0
+2026-10-31 14:35:16,822 | INFO | Extracting video 198/236 | video_id=MF_HZMyFpZY
+2026-10-31 14:35:17,073 | INFO | Extracting video 199/236 | video_id=mY_kRBysA1c
+2026-10-31 14:35:17,341 | INFO | Extracting video 200/236 | video_id=eS9LiiGzW3s
+2026-10-31 14:35:17,595 | INFO | Extracting video 201/236 | video_id=30XFUyYf9jU
+2026-10-31 14:35:17,857 | INFO | Extracting video 202/236 | video_id=Fd1Aa2PIxY8
+2026-10-31 14:35:18,122 | INFO | Extracting video 203/236 | video_id=hX2Pk9fppqE
+2026-10-31 14:35:18,385 | INFO | Extracting video 204/236 | video_id=cUTWjoIbwpI
+2026-10-31 14:35:18,837 | INFO | Extracting video 205/236 | video_id=LnZjcfspWfM
+2026-10-31 14:35:19,204 | INFO | Extracting video 206/236 | video_id=RL5QX0Tkh3o
+2026-10-31 14:35:19,514 | INFO | Extracting video 207/236 | video_id=BaoeHhyIdYs
+2026-10-31 14:35:19,792 | INFO | Extracting video 208/236 | video_id=0mQn-pPDLuM
+2026-10-31 14:35:20,086 | INFO | Extracting video 209/236 | video_id=IDn22RzxxAw
+2026-10-31 14:35:20,587 | INFO | Extracting video 210/236 | video_id=H4IQ4ax2NDQ
+2026-10-31 14:35:20,903 | INFO | Extracting video 211/236 | video_id=n7m1GQdlaxU
+2026-10-31 14:35:21,229 | INFO | Extracting video 212/236 | video_id=gG3D4c6dNRw
+2026-10-31 14:35:21,521 | INFO | Extracting video 213/236 | video_id=_tdzqu5h6cQ
+2026-10-31 14:35:21,891 | INFO | Extracting video 214/236 | video_id=FLDhH7BNCi0
+2026-10-31 14:35:22,177 | INFO | Extracting video 215/236 | video_id=ChKvPX3juw8
+2026-10-31 14:35:22,481 | INFO | Extracting video 216/236 | video_id=nCHquIY69Sk
+2026-10-31 14:35:22,827 | INFO | Extracting video 217/236 | video_id=OsYMkC0udyA
+2026-10-31 14:35:23,150 | INFO | Extracting video 218/236 | video_id=StPsQV2sKRY
+2026-10-31 14:35:23,429 | INFO | Extracting video 219/236 | video_id=1pAaMZTuXKo
+2026-10-31 14:35:23,761 | INFO | Extracting video 220/236 | video_id=J2Ae2D0aTcA
+2026-10-31 14:35:24,065 | INFO | Extracting video 221/236 | video_id=oiRaVO6hmSE
+2026-10-31 14:35:24,359 | INFO | Extracting video 222/236 | video_id=9q0vJoKUaVE
+2026-10-31 14:35:24,633 | INFO | Extracting video 223/236 | video_id=R0KboCXzlG8
+2026-10-31 14:35:24,971 | INFO | Extracting video 224/236 | video_id=aksFQuqxYLU
+2026-10-31 14:35:25,257 | INFO | Extracting video 225/236 | video_id=Tn8hY0WsE3I
+2026-10-31 14:35:25,555 | INFO | Extracting video 226/236 | video_id=VX38XdWRa2A
+2026-10-31 14:35:25,826 | INFO | Extracting video 227/236 | video_id=UwNHzvkXLcs
+2026-10-31 14:35:26,146 | INFO | Extracting video 228/236 | video_id=3bKrPQundwk
+2026-10-31 14:35:26,494 | INFO | Extracting video 229/236 | video_id=E40CSNsC5VE
+2026-10-31 14:35:26,811 | INFO | Extracting video 230/236 | video_id=H03_0tz1RQI
+2026-10-31 14:35:27,291 | INFO | Extracting video 231/236 | video_id=fae4GiaPil8
+2026-10-31 14:35:27,572 | INFO | Extracting video 232/236 | video_id=bxtuMeRwXUQ
+2026-10-31 14:35:27,872 | INFO | Extracting video 233/236 | video_id=CmgRywMys7U
+2026-10-31 14:35:28,188 | INFO | Extracting video 234/236 | video_id=gWZzZOH5CuQ
+2026-10-31 14:35:28,484 | INFO | Extracting video 235/236 | video_id=do5h2O8bmVo
+2026-10-31 14:35:28,917 | INFO | Extracting video 236/236 | video_id=BMyva1qOKbg
+2026-10-31 14:35:45,004 | INFO | [3/5] VIDEO EXTRACTION SUCCESS
+2026-10-31 14:35:45,004 | INFO | [4/5] STAGING START
+2026-10-31 14:35:50,012 | INFO | STAGING DIM CHANNELS SUCCESS
+2026-10-31 14:35:55,856 | INFO | STAGING FACT CHANNELS SUCCESS
+2026-10-31 14:36:01,813 | INFO | STAGING DIM VIDEOS SUCCESS
+2026-10-31 14:36:07,611 | INFO | STAGING FACT VIDEOS SUCCESS
+2026-10-31 14:36:07,612 | INFO | [4/5] STAGING SUCCESS
+2026-10-31 14:36:07,612 | INFO | [5/5] SILVER START
+2026-10-31 14:36:14,870 | INFO | SILVER DIM CHANNELS SUCCESS
+2026-10-31 14:36:22,257 | INFO | SILVER FACT CHANNELS SUCCESS
+2026-10-31 14:36:28,091 | INFO | SILVER DIM VIDEOS SUCCESS
+2026-10-31 14:36:34,379 | INFO | SILVER FACT VIDEOS SUCCESS
+2026-10-31 14:36:34,379 | INFO | [5/5] SILVER SUCCESS
+2026-10-31 14:36:34,380 | INFO | PIPELINE SUCCESS | run_id=20261031_073054_33de18dd
+2026-10-31 14:36:34,380 | INFO | PIPELINE FINISHED | run_id=20261031_073054_33de18dd | duration=340.31 seconds
+2026-10-31 15:10:03,891 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 15:10:03,893 | INFO | Đã lấy thông tin @VieChannelOfficial thành công
+2026-10-31 15:10:20,685 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 15:10:20,685 | INFO | Đã lấy thông tin @VieChannelOfficiazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzl thành công
+2026-10-31 15:20:55,202 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 15:20:55,595 | ERROR | Lỗi khi lấy thông tin
+Traceback (most recent call last):
+  File "/home/waytodata/projects/channel-analytic/elt/channels_extraction.py", line 14, in channel_information
+    raise ValueError(f"Không tìm thấy tông tin {channel}")
+ValueError: Không tìm thấy tông tin @VieChannelOfficiazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzl
+2026-10-31 15:21:12,410 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 16:00:51,499 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 16:00:51,936 | INFO | Đã lấy thông tin @VieChannelOfficial thành công
+2026-10-31 16:00:51,936 | INFO | 1
+2026-10-31 16:00:51,936 | INFO | PL thành công
+2026-10-31 16:01:27,001 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 16:01:27,379 | INFO | Đã lấy thông tin @VieChannelOfficial thành công
+2026-10-31 16:01:27,380 | INFO | 1
+2026-10-31 16:01:27,381 | INFO | PL thành công
+2026-10-31 16:01:38,450 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 16:01:39,919 | ERROR | Lỗi Không tìm thấy tông tin @VieChannelOfficialfsdfsd
+2026-10-31 16:01:39,920 | INFO | Lỗi: Không tìm thấy tông tin @VieChannelOfficialfsdfsd
+2026-10-31 16:02:17,343 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 16:02:22,716 | ERROR | Lỗi Không tìm thấy tông tin @VieChannelOfficialfsdfsd
+2026-10-31 16:02:48,903 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 16:02:50,156 | ERROR | Lỗi Không tìm thấy tông tin @VieChannelOfficialfsdfsd
+2026-10-31 16:02:50,157 | INFO | PL dừng
+2026-10-31 16:03:07,952 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 16:03:08,423 | ERROR | Lỗi Không tìm thấy tông tin @VieChannelOfficialfsdfsd
+2026-10-31 16:03:08,423 | ERROR | PL dừng
+2026-10-31 19:00:57,930 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 19:01:00,735 | INFO | Đã lấy thông tin @VieChannelOfficial thành công
+2026-10-31 19:01:00,736 | INFO | 1
+2026-10-31 19:01:00,737 | INFO | PL thành công
+2026-10-31 19:13:58,138 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 19:13:58,527 | INFO | 1
+2026-10-31 19:13:58,528 | INFO | PL thành công
+2026-10-31 19:14:17,117 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 19:14:17,542 | INFO | 1
+2026-10-31 19:14:17,543 | INFO | PL thành công
+2026-10-31 19:22:49,943 | INFO | ========== PIPELINE START ==========
+2026-10-31 19:22:49,943 | INFO | RUN ID: 20261031_122249_5c77dd86
+2026-10-31 19:22:49,944 | INFO | [1/5] CHANNEL EXTRACTION START
+2026-10-31 19:22:49,944 | INFO | Đang bắt đầu lấy thông tin channel
+2026-10-31 19:22:50,354 | INFO | Bắt đầu lưu channels thành JSON
+2026-10-31 19:22:50,355 | INFO | Đã lưu file channels thành công JSON 
+2026-10-31 19:22:50,356 | INFO | Bắt đầu load channels vào youtube-pipeline-512201.raw_youtube.channels
+2026-10-31 19:22:54,214 | INFO | PIPELINE FINISHED | run_id=20261031_122249_5c77dd86 | duration=4.27 seconds

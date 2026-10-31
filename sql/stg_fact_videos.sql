@@ -19,7 +19,7 @@ SELECT
     collected_at,
     run_id
 
-FROM `youtube-pipeline-512201.bronze_youtube.bronze_video_statistic`
+FROM `youtube-pipeline-512201.bronze_youtube.bronze_videos_statistics`
 
 WHERE video_id IS NOT NULL
   AND collected_at IS NOT NULL

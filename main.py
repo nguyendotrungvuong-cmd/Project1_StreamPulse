@@ -2,7 +2,7 @@ import logging
 import time
 from uuid import uuid4
 from datetime import datetime, timezone
-
+from elt.logging_config import setup_logging
 from elt.youtube_client import get_youtube
 from elt.channels_extraction import channel_information
 from elt.storage import save_raw_json
@@ -10,203 +10,60 @@ from elt.bq_loader import load_to_bigquery
 from elt.uploads_extraction import get_all_videos_id
 from elt.bq_query import *
 from elt.extract_video import get_video_static
-
-
-# =========================
-# LOGGING CONFIG
-# =========================
-
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s",
-    handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler("pipeline.log", encoding="utf-8")
-    ]
-)
-
+from elt.arg_parser import arg_parse
+import sys
 logger = logging.getLogger(__name__)
 
 PROJECT_ID = "youtube-pipeline-512201"
-
-
-def main():
-
-    start_time = time.perf_counter()
-
-    run_id = (
+args = arg_parse()
+channel = str(args.channel).replace("@","")
+show = args.show
+run_id = (
         datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
         + "_"
         + uuid4().hex[:8]
     )
-
+def main():
+    setup_logging()
+    start_time = time.perf_counter()
+    
+    
+    
     logger.info("========== PIPELINE START ==========")
     logger.info("RUN ID: %s", run_id)
-
+    logger.info(f"Channel: {channel}")
+    logger.info(f"Show: {show}")
     try:
-
-        # =========================
-        # 1. CHANNEL EXTRACTION
-        # =========================
-
-        logger.info("[1/5] CHANNEL EXTRACTION START")
-
-        channels_data_json = channel_information(
-            channel="@VieChannelOfficial"
-        )
-
-        save_raw_json(
-            filename="channels",
-            data=channels_data_json,
-            run_id=run_id
-        )
-
-        load_to_bigquery(
-            file_name="channels",
-            project_id=PROJECT_ID,
-            dataset_id="raw_youtube",
-            table_id="channels"
-        )
-
-        bronze_channels(project_id=PROJECT_ID)
-
-        logger.info("[1/5] CHANNEL EXTRACTION SUCCESS")
-
-        # =========================
-        # 2. UPLOADS EXTRACTION
-        # =========================
-
-        logger.info("[2/5] UPLOADS EXTRACTION START")
-
-        playlist_id = extract_uploads_id(
-            project_id=PROJECT_ID
-        )
-
-        logger.info("Playlist ID: %s", playlist_id)
-
-        data = get_all_videos_id(
-            uploads_id=playlist_id
-        )
-
-        save_raw_json(
-            filename="uploads",
-            data=data,
-            run_id=run_id
-        )
-
-        load_to_bigquery(
-            file_name="uploads",
-            project_id=PROJECT_ID,
-            dataset_id="raw_youtube",
-            table_id="uploads"
-        )
-
-        bronze_uploads(project_id=PROJECT_ID)
-
-        logger.info("[2/5] UPLOADS EXTRACTION SUCCESS")
-
-        # =========================
-        # 3. VIDEO EXTRACTION
-        # =========================
-
-        logger.info("[3/5] VIDEO EXTRACTION START")
-
-        video_ids = extract_filtered_video_ids(
-            project_id=PROJECT_ID
-        )
-
-        logger.info("Total videos: %s", len(video_ids))
-
-        response = []
-
-        for index, video_id in enumerate(video_ids, start=1):
-
-            logger.info(
-                "Extracting video %s/%s | video_id=%s",
-                index,
-                len(video_ids),
-                video_id
-            )
-
-            static = get_video_static(video_id=video_id)
-
-            response.append(static)
-
-        save_raw_json(
-            filename="video_statistic",
-            data=response,
-            run_id=run_id
-        )
-
-        load_to_bigquery(
-            file_name="video_statistic",
-            project_id=PROJECT_ID,
-            dataset_id="raw_youtube",
-            table_id="video_details"
-        )
-
-        bronze_video_details(project_id=PROJECT_ID)
-
-        logger.info("[3/5] VIDEO EXTRACTION SUCCESS")
-
-        # =========================
-        # 4. STAGING
-        # =========================
-
-        logger.info("[4/5] STAGING START")
-
-        stg_dim_channels(project_id=PROJECT_ID)
-        logger.info("STAGING DIM CHANNELS SUCCESS")
-
-        stg_fact_channels(project_id=PROJECT_ID)
-        logger.info("STAGING FACT CHANNELS SUCCESS")
-
-        stg_dim_videos(project_id=PROJECT_ID)
-        logger.info("STAGING DIM VIDEOS SUCCESS")
-
-        stg_fact_videos(project_id=PROJECT_ID)
-        logger.info("STAGING FACT VIDEOS SUCCESS")
-
-        logger.info("[4/5] STAGING SUCCESS")
-
-        # =========================
-        # 5. SILVER
-        # =========================
-
-        logger.info("[5/5] SILVER START")
-
-        silver_dim_channels(project_id=PROJECT_ID)
-        logger.info("SILVER DIM CHANNELS SUCCESS")
-
-        silver_fact_channels(project_id=PROJECT_ID)
-        logger.info("SILVER FACT CHANNELS SUCCESS")
-
-        silver_dim_videos(project_id=PROJECT_ID)
-        logger.info("SILVER DIM VIDEOS SUCCESS")
-
-        silver_fact_videos(project_id=PROJECT_ID)
-        logger.info("SILVER FACT VIDEOS SUCCESS")
-
-        logger.info("[5/5] SILVER SUCCESS")
-
-    except Exception:
-
-        logger.exception(
-            "PIPELINE FAILED | run_id=%s",
-            run_id
-        )
-
-        raise
+        data = channel_information(channel=channel)
+        save_raw_json(filename="channels.json",data=data,run_id=run_id)
+        load_to_bigquery(file_name=f"channels.json",project_id=PROJECT_ID,dataset_id="raw_youtube",table_id=f"raw_channels")
+        sql_query(project_id=PROJECT_ID,filename="bronze_channels.sql")
+        data = sql_query(project_id=PROJECT_ID,filename="extract_uploads_id.sql")
+        data = get_all_videos_id(uploads_id=data)
+        save_raw_json(filename="uploads.json",data=data,run_id=run_id)
+        load_to_bigquery(file_name="uploads.json",project_id=PROJECT_ID,dataset_id="raw_youtube",table_id="raw_uploads")
+        sql_query(project_id=PROJECT_ID,filename="bronze_uploads.sql")
+        data =  sql_query_filter(project_id=PROJECT_ID,filename="extract_filtered_video_ids.sql",show=show)
+        statictis_videos = []
+        logger.info("Bắt đầu lấy dữ liệu videos ")
+        for item in data:
+            statistic = get_video_static(video_id=item)
+            statictis_videos.append(statistic)
+        save_raw_json(filename="videos_statistic.json",data = statictis_videos,run_id=run_id)
+        load_to_bigquery(file_name="videos_statistic.json",project_id=PROJECT_ID,dataset_id="raw_youtube",table_id="raw_video_statistics")
+        sql_query(project_id=PROJECT_ID,filename="bronze_videos_detail.sql")
+        sql_query(project_id=PROJECT_ID,filename="stg_dim_channels.sql")
+        sql_query(project_id=PROJECT_ID,filename="stg_fact_channels.sql")
+        sql_query(project_id=PROJECT_ID,filename="stg_dim_videos.sql")
+        sql_query(project_id=PROJECT_ID,filename="stg_fact_videos.sql")
+        sql_query(project_id=PROJECT_ID,filename="silver_dim_channels.sql")
+        sql_query(project_id=PROJECT_ID,filename="silver_fact_channels.sql")
+        sql_query(project_id=PROJECT_ID,filename="silver_dim_videos.sql")
+        sql_query(project_id=PROJECT_ID,filename="silver_fact_videos.sql")
+    except ValueError:
+        logging.error(f"Lỗi: {ValueError}")
 
     else:
-
-        logger.info(
-            "PIPELINE SUCCESS | run_id=%s",
-            run_id
-        )
-
-    finally:
-
         elapsed = time.perf_counter() - start_time
 
         logger.info(
@@ -216,5 +73,6 @@ def main():
         )
 
 
-if __name__ == "__main__":
+if (__name__) == "__main__":
     main()
+

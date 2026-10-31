@@ -63,7 +63,7 @@ SELECT
         AS TIMESTAMP
     ) AS collected_at
 
-FROM `youtube-pipeline-512201.raw_youtube.uploads` AS r
+FROM `youtube-pipeline-512201.raw_youtube.raw_uploads` AS r
 
 CROSS JOIN UNNEST(
     JSON_QUERY_ARRAY(r.payload, '$.data')

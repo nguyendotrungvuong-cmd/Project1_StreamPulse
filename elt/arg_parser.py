@@ -15,6 +15,6 @@ def arg_parse():
         "--show",
         type=str,
         required=True,
-        help="Ví dụ: The Masked Singer hoặc 2 ngày 1 đêm hoặc anh trai say hi",
+        help="Ví dụ: casimatna , anhtraisayhi, tinhhasayhi, 2ngay1dem.. chỉ hợp lệ khi chương trình thuộc đúng channel",
     )
     return parser.parse_args()

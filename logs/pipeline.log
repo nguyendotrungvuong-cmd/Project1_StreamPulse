@@ -445,3 +445,20 @@
 2026-11-01 00:47:12,812 | INFO | root | Bắt đầu lưu channels.json thành JSON
 2026-11-01 00:47:12,813 | INFO | elt.storage | Đã lưu file channels.json thành công JSON 
 2026-11-01 00:47:12,813 | INFO | elt.bq_loader | Bắt đầu load channels.json vào youtube-pipeline-512201.raw_youtube.raw_channels
+2026-11-01 01:41:40,882 | INFO | __main__ | ========== PIPELINE START ==========
+2026-11-01 01:41:40,884 | INFO | __main__ | RUN ID: 20261031_184140_45fc2ae6
+2026-11-01 01:41:40,884 | INFO | __main__ | Channel: VieChannelOfficial
+2026-11-01 01:41:40,884 | INFO | __main__ | Show: casimatna
+2026-11-01 01:41:40,884 | INFO | elt.channels_extraction | Đang bắt đầu lấy thông tin channel
+2026-11-01 01:41:41,230 | INFO | elt.channels_extraction | Đã lấy thông tin VieChannelOfficial thành công
+2026-11-01 01:41:41,231 | INFO | root | Bắt đầu lưu channels.json thành JSON
+2026-11-01 01:41:41,233 | INFO | elt.storage | Đã lưu file channels.json thành công JSON 
+2026-11-01 01:41:41,233 | INFO | elt.bq_loader | Bắt đầu load channels.json vào youtube-pipeline-512201.raw_youtube.raw_channels
+2026-11-01 01:41:49,567 | INFO | elt.bq_loader | Tổng số dòng: 5
+2026-11-01 01:41:49,567 | INFO | elt.bq_loader | Đã load thành công channels.json vào youtube-pipeline-512201.raw_youtube.raw_channels 
+2026-11-01 01:41:49,568 | INFO | elt.bq_loader | Tổng số dòng: 5
+2026-11-01 01:41:49,568 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: bronze_channels.sql
+2026-11-01 01:41:54,760 | INFO | elt.bq_query | Truy vấn SQL thành công: bronze_channels.sql
+2026-11-01 01:41:54,760 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: extract_uploads_id.sql
+2026-11-01 01:41:57,642 | INFO | elt.bq_query | Truy vấn SQL thành công: extract_uploads_id.sql
+2026-11-01 01:41:58,063 | INFO | root | Bắt đầu extract thông tin uploads

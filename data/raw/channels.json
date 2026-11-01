@@ -1,9 +1,9 @@
 {
-  "run_id": "20261031_184140_45fc2ae6",
-  "collected_at": "2026-10-31T18:41:41.232127+00:00",
+  "run_id": "20261101_084114_8f6f22e9",
+  "collected_at": "2026-11-01T08:41:14.472952+00:00",
   "data": {
     "kind": "youtube#channelListResponse",
-    "etag": "rGursG1r_M1M9yi5kmEs2R2KW0E",
+    "etag": "eGZ6n_vzmYJbLwYq0ulJ73ea3Cs",
     "pageInfo": {
       "totalResults": 1,
       "resultsPerPage": 5
@@ -11,7 +11,7 @@
     "items": [
       {
         "kind": "youtube#channel",
-        "etag": "E9YEsmEoxXsF1bd-W8H9XzgsIzw",
+        "etag": "wEB5aiIgNgb-ePlJl76O3fRatMM",
         "id": "UCkna2OcuN1E6u5I8GVtdkOw",
         "snippet": {
           "title": "Vie Channel ",
@@ -48,10 +48,10 @@
           }
         },
         "statistics": {
-          "viewCount": "4215619481",
+          "viewCount": "4216760717",
           "subscriberCount": "11500000",
           "hiddenSubscriberCount": false,
-          "videoCount": "12315"
+          "videoCount": "12321"
         }
       }
     ]

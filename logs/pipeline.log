@@ -462,3 +462,119 @@
 2026-11-01 01:41:54,760 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: extract_uploads_id.sql
 2026-11-01 01:41:57,642 | INFO | elt.bq_query | Truy vấn SQL thành công: extract_uploads_id.sql
 2026-11-01 01:41:58,063 | INFO | root | Bắt đầu extract thông tin uploads
+2026-11-01 01:51:02,242 | INFO | __main__ | ========== PIPELINE START ==========
+2026-11-01 01:51:02,243 | INFO | __main__ | RUN ID: 20261031_185102_3208f840
+2026-11-01 01:51:02,243 | INFO | __main__ | Channel: VieChannelOfficial
+2026-11-01 01:51:02,243 | INFO | __main__ | Show: casimatna
+2026-11-01 01:51:02,243 | INFO | elt.channels_extraction | Đang bắt đầu lấy thông tin channel
+2026-11-01 01:51:02,593 | INFO | elt.channels_extraction | Đã lấy thông tin VieChannelOfficial thành công
+2026-11-01 01:51:02,593 | INFO | root | Bắt đầu lưu channels.json thành JSON
+2026-11-01 01:51:02,594 | INFO | elt.storage | Đã lưu file channels.json thành công JSON 
+2026-11-01 01:51:02,594 | INFO | elt.bq_loader | Bắt đầu load channels.json vào youtube-pipeline-512201.raw_youtube.raw_channels
+2026-11-01 01:51:10,730 | INFO | elt.bq_loader | Tổng số dòng: 7
+2026-11-01 01:51:10,731 | INFO | elt.bq_loader | Đã load thành công channels.json vào youtube-pipeline-512201.raw_youtube.raw_channels 
+2026-11-01 01:51:10,731 | INFO | elt.bq_loader | Tổng số dòng: 7
+2026-11-01 01:51:10,731 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: bronze_channels.sql
+2026-11-01 01:51:15,967 | INFO | elt.bq_query | Truy vấn SQL thành công: bronze_channels.sql
+2026-11-01 01:51:15,967 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: extract_uploads_id.sql
+2026-11-01 01:51:19,421 | INFO | elt.bq_query | Truy vấn SQL thành công: extract_uploads_id.sql
+2026-11-01 01:51:19,832 | INFO | root | Bắt đầu extract thông tin uploads
+2026-11-01 01:53:27,818 | INFO | root | Đã lấy thành công toàn bộ uploads
+2026-11-01 01:53:27,819 | INFO | root | Bắt đầu lưu uploads.json thành JSON
+2026-11-01 01:53:28,999 | INFO | elt.storage | Đã lưu file uploads.json thành công JSON 
+2026-11-01 01:53:29,000 | INFO | elt.bq_loader | Bắt đầu load uploads.json vào youtube-pipeline-512201.raw_youtube.raw_uploads
+2026-11-01 01:53:43,601 | INFO | elt.bq_loader | Tổng số dòng: 3
+2026-11-01 01:53:43,602 | INFO | elt.bq_loader | Đã load thành công uploads.json vào youtube-pipeline-512201.raw_youtube.raw_uploads 
+2026-11-01 01:53:43,602 | INFO | elt.bq_loader | Tổng số dòng: 3
+2026-11-01 01:53:43,602 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: bronze_uploads.sql
+2026-11-01 01:53:49,770 | INFO | elt.bq_query | Truy vấn SQL thành công: bronze_uploads.sql
+2026-11-01 01:53:49,771 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: extract_filtered_video_ids.sql
+2026-11-01 01:53:52,664 | INFO | elt.bq_query | Truy vấn SQL thành công: extract_filtered_video_ids.sql
+2026-11-01 01:53:53,109 | INFO | elt.bq_query | Đã lọc xong: 130 video 
+2026-11-01 01:53:53,140 | INFO | __main__ | Bắt đầu lấy dữ liệu videos 
+2026-11-01 01:54:28,185 | INFO | root | Bắt đầu lưu videos_statistic.json thành JSON
+2026-11-01 01:54:28,207 | INFO | elt.storage | Đã lưu file videos_statistic.json thành công JSON 
+2026-11-01 01:54:28,207 | INFO | elt.bq_loader | Bắt đầu load videos_statistic.json vào youtube-pipeline-512201.raw_youtube.raw_video_statistics
+2026-11-01 01:54:33,489 | INFO | elt.bq_loader | Tổng số dòng: 3
+2026-11-01 01:54:33,489 | INFO | elt.bq_loader | Đã load thành công videos_statistic.json vào youtube-pipeline-512201.raw_youtube.raw_video_statistics 
+2026-11-01 01:54:33,490 | INFO | elt.bq_loader | Tổng số dòng: 3
+2026-11-01 01:54:33,490 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: bronze_videos_detail.sql
+2026-11-01 01:54:38,350 | INFO | elt.bq_query | Truy vấn SQL thành công: bronze_videos_detail.sql
+2026-11-01 01:54:38,350 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: stg_dim_channels.sql
+2026-11-01 01:54:42,911 | INFO | elt.bq_query | Truy vấn SQL thành công: stg_dim_channels.sql
+2026-11-01 01:54:42,912 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: stg_fact_channels.sql
+2026-11-01 01:54:47,248 | INFO | elt.bq_query | Truy vấn SQL thành công: stg_fact_channels.sql
+2026-11-01 01:54:47,249 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: stg_dim_videos.sql
+2026-11-01 01:54:52,205 | INFO | elt.bq_query | Truy vấn SQL thành công: stg_dim_videos.sql
+2026-11-01 01:54:52,205 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: stg_fact_videos.sql
+2026-11-01 01:54:56,721 | INFO | elt.bq_query | Truy vấn SQL thành công: stg_fact_videos.sql
+2026-11-01 01:54:56,721 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: silver_dim_channels.sql
+2026-11-01 01:55:02,441 | INFO | elt.bq_query | Truy vấn SQL thành công: silver_dim_channels.sql
+2026-11-01 01:55:02,442 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: silver_fact_channels.sql
+2026-11-01 01:55:07,073 | INFO | elt.bq_query | Truy vấn SQL thành công: silver_fact_channels.sql
+2026-11-01 01:55:07,073 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: silver_dim_videos.sql
+2026-11-01 01:55:11,612 | INFO | elt.bq_query | Truy vấn SQL thành công: silver_dim_videos.sql
+2026-11-01 01:55:11,613 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: silver_fact_videos.sql
+2026-11-01 01:55:17,165 | INFO | elt.bq_query | Truy vấn SQL thành công: silver_fact_videos.sql
+2026-11-01 01:55:17,166 | INFO | __main__ | PIPELINE FINISHED | run_id=20261031_185102_3208f840 | duration=254.92 seconds
+2026-11-01 15:37:31,097 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: extract_uploads_id.sql
+2026-11-01 15:37:36,398 | INFO | elt.bq_query | Truy vấn SQL thành công: extract_uploads_id.sql
+2026-11-01 15:37:36,863 | INFO | elt.uploads_extraction | Bắt đầu extract thông tin uploads
+2026-11-01 15:40:17,855 | INFO | elt.uploads_extraction | Đã lấy thành công 246 trang uploads
+2026-11-01 15:40:17,855 | INFO | elt.uploads_extraction | Tổng số video lấy được: 12271
+2026-11-01 15:41:14,112 | INFO | __main__ | ========== PIPELINE START ==========
+2026-11-01 15:41:14,112 | INFO | __main__ | RUN ID: 20261101_084114_8f6f22e9
+2026-11-01 15:41:14,113 | INFO | __main__ | Channel: VieChannelOfficial
+2026-11-01 15:41:14,113 | INFO | __main__ | Show: casimatna
+2026-11-01 15:41:14,113 | INFO | elt.channels_extraction | Đang bắt đầu lấy thông tin channel
+2026-11-01 15:41:14,471 | INFO | elt.channels_extraction | Đã lấy thông tin VieChannelOfficial thành công
+2026-11-01 15:41:14,472 | INFO | root | Bắt đầu lưu channels.json thành JSON
+2026-11-01 15:41:14,475 | INFO | elt.storage | Đã lưu file channels.json thành công JSON 
+2026-11-01 15:41:14,475 | INFO | elt.bq_loader | Bắt đầu load channels.json vào youtube-pipeline-512201.raw_youtube.raw_channels
+2026-11-01 15:41:22,351 | INFO | elt.bq_loader | Tổng số dòng: 3
+2026-11-01 15:41:22,351 | INFO | elt.bq_loader | Đã load thành công channels.json vào youtube-pipeline-512201.raw_youtube.raw_channels 
+2026-11-01 15:41:22,351 | INFO | elt.bq_loader | Tổng số dòng: 3
+2026-11-01 15:41:22,351 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: bronze_channels.sql
+2026-11-01 15:41:27,915 | INFO | elt.bq_query | Truy vấn SQL thành công: bronze_channels.sql
+2026-11-01 15:41:27,915 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: extract_uploads_id.sql
+2026-11-01 15:41:30,788 | INFO | elt.bq_query | Truy vấn SQL thành công: extract_uploads_id.sql
+2026-11-01 15:41:31,352 | INFO | elt.uploads_extraction | Bắt đầu extract thông tin uploads
+2026-11-01 15:43:50,733 | INFO | elt.uploads_extraction | Đã lấy thành công 246 trang uploads
+2026-11-01 15:43:50,734 | INFO | elt.uploads_extraction | Tổng số video lấy được: 12271
+2026-11-01 15:43:50,734 | INFO | root | Bắt đầu lưu uploads.json thành JSON
+2026-11-01 15:43:51,928 | INFO | elt.storage | Đã lưu file uploads.json thành công JSON 
+2026-11-01 15:43:51,928 | INFO | elt.bq_loader | Bắt đầu load uploads.json vào youtube-pipeline-512201.raw_youtube.raw_uploads
+2026-11-01 15:44:30,047 | INFO | elt.bq_loader | Tổng số dòng: 3
+2026-11-01 15:44:30,048 | INFO | elt.bq_loader | Đã load thành công uploads.json vào youtube-pipeline-512201.raw_youtube.raw_uploads 
+2026-11-01 15:44:30,048 | INFO | elt.bq_loader | Tổng số dòng: 3
+2026-11-01 15:44:30,048 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: bronze_uploads.sql
+2026-11-01 15:44:36,475 | INFO | elt.bq_query | Truy vấn SQL thành công: bronze_uploads.sql
+2026-11-01 15:44:36,475 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: extract_filtered_video_ids.sql
+2026-11-01 15:44:39,494 | INFO | elt.bq_query | Truy vấn SQL thành công: extract_filtered_video_ids.sql
+2026-11-01 15:44:39,927 | INFO | elt.bq_query | Đã lọc xong: 163 video 
+2026-11-01 15:44:39,959 | INFO | __main__ | Bắt đầu lấy dữ liệu videos 
+2026-11-01 15:45:31,703 | INFO | root | Bắt đầu lưu videos_statistic.json thành JSON
+2026-11-01 15:45:31,731 | INFO | elt.storage | Đã lưu file videos_statistic.json thành công JSON 
+2026-11-01 15:45:31,731 | INFO | elt.bq_loader | Bắt đầu load videos_statistic.json vào youtube-pipeline-512201.raw_youtube.raw_video_statistics
+2026-11-01 15:45:50,839 | INFO | elt.bq_loader | Tổng số dòng: 3
+2026-11-01 15:45:50,839 | INFO | elt.bq_loader | Đã load thành công videos_statistic.json vào youtube-pipeline-512201.raw_youtube.raw_video_statistics 
+2026-11-01 15:45:50,840 | INFO | elt.bq_loader | Tổng số dòng: 3
+2026-11-01 15:45:50,840 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: bronze_videos_detail.sql
+2026-11-01 15:45:55,606 | INFO | elt.bq_query | Truy vấn SQL thành công: bronze_videos_detail.sql
+2026-11-01 15:45:55,607 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: stg_dim_channels.sql
+2026-11-01 15:45:59,474 | INFO | elt.bq_query | Truy vấn SQL thành công: stg_dim_channels.sql
+2026-11-01 15:45:59,474 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: stg_fact_channels.sql
+2026-11-01 15:46:03,149 | INFO | elt.bq_query | Truy vấn SQL thành công: stg_fact_channels.sql
+2026-11-01 15:46:03,150 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: stg_dim_videos.sql
+2026-11-01 15:46:06,818 | INFO | elt.bq_query | Truy vấn SQL thành công: stg_dim_videos.sql
+2026-11-01 15:46:06,818 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: stg_fact_videos.sql
+2026-11-01 15:46:10,920 | INFO | elt.bq_query | Truy vấn SQL thành công: stg_fact_videos.sql
+2026-11-01 15:46:10,920 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: silver_dim_channels.sql
+2026-11-01 15:46:16,440 | INFO | elt.bq_query | Truy vấn SQL thành công: silver_dim_channels.sql
+2026-11-01 15:46:16,441 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: silver_fact_channels.sql
+2026-11-01 15:46:21,192 | INFO | elt.bq_query | Truy vấn SQL thành công: silver_fact_channels.sql
+2026-11-01 15:46:21,192 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: silver_dim_videos.sql
+2026-11-01 15:46:27,914 | INFO | elt.bq_query | Truy vấn SQL thành công: silver_dim_videos.sql
+2026-11-01 15:46:27,915 | INFO | elt.bq_query | Đang khởi tạo truy vấn SQL: silver_fact_videos.sql
+2026-11-01 15:46:33,037 | INFO | elt.bq_query | Truy vấn SQL thành công: silver_fact_videos.sql
+2026-11-01 15:46:33,037 | INFO | __main__ | PIPELINE FINISHED | run_id=20261101_084114_8f6f22e9 | duration=318.93 seconds
